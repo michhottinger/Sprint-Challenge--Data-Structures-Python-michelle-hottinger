@@ -1,3 +1,5 @@
+import time
+start_time = time.time()
 class Node:
     def __init__(self, value=None, next_node=None):
         self.value = value
@@ -50,6 +52,12 @@ class LinkedList:
           prev = current
           current = next
         self.head = prev
+
+        
+end_time = time.time()
+print (f"runtime: {end_time - start_time} seconds")
+
+#runtime: 5.316734313964844e-05 seconds this is surely fast
 
 #recursive and confusing to me:
 # def reverse_list(self, node, prev):

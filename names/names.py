@@ -22,9 +22,8 @@ duplicates = []  # Return the list of duplicates in this data structure
 # runtime: 7.768748998641968 seconds
 
 #my solution:
-# while name_1 in names_1 == name_2 in names_2:
-#     duplicates.append(name_1)
-# duplicates = [i for i in names_1 if i in names_2]
+#Set('abc').intersection('cbs') from: https://docs.python.org/2/library/sets.html
+#this is brilliant
       
 #the right solution O(n)  = O(n + n + n)  
     
