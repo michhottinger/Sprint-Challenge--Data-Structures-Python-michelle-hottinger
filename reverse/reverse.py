@@ -50,3 +50,28 @@ class LinkedList:
           prev = current
           current = next
         self.head = prev
+
+#recursive and confusing to me:
+# def reverse_list(self, node, prev):
+#         def reverse(node, prev):
+#             # If node is None
+#             if not node:
+#                 # Return prev
+#                 return prev
+#             # Store the next as the nodes next value
+#             next = node.next_node
+
+#             # Safe to switch the next node to prev
+#             node.next_node = prev
+
+#             # Prev is now passed in node
+#             prev = node
+
+#             # Node is now the next node
+#             node = next
+
+#             # Return the recursive call passing in Node and Prev
+#             return reverse(node, prev)
+
+#         # Set the head to completed recursion.
+#         self.head = reverse(self.head, None)
